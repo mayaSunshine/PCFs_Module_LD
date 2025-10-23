@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { Label } from '@fluentui/react-components';
-
+import type { ReactElement } from "react";
+import {
+  DeclarativeChart,
+  IDeclarativeChart,
+  Schema,
+} from "@fluentui/react-charts";
 export interface IPermitStatusDashboardProps {
   name?: string;
 }
