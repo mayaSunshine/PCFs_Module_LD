@@ -1,8 +1,11 @@
 
-export interface ICompletedMaintenanceRequest {
-    id: string;
-    status: string;
+export interface IPermit {
+    permitId: string;
+    status:string;
+    statusReason: string;
     expirationDate: Date;
-    statusCode: number;
-    
+    facility:{
+        id:string; 
+        name:string;
+    };
 }
