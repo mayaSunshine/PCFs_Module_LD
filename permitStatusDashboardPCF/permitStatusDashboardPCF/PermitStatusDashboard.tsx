@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Label } from '@fluentui/react-components';
 
-export interface IHelloWorldProps {
+export interface IPermitStatusDashboardProps {
   name?: string;
 }
 
-export class HelloWorld extends React.Component<IHelloWorldProps> {
+export class PermitStatusDashboard extends React.Component<IPermitStatusDashboardProps> {
   public render(): React.ReactNode {
     return (
       <Label>

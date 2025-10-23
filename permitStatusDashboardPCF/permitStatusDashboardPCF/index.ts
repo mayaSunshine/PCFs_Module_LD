@@ -1,5 +1,5 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
-import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
+import { PermitStatusDashboard, IPermitStatusDashboardProps } from "./PermitStatusDashboard";
 import * as React from "react";
 import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
 type DataSet = ComponentFramework.PropertyTypes.DataSet;
@@ -35,9 +35,10 @@ export class permitStatusDashboardPCF implements ComponentFramework.ReactControl
      * @returns ReactElement root react element for the control
      */
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
-        const props: IHelloWorldProps = { name: 'Power Apps' };
+        const props: IPermitStatusDashboardProps = { name: 'Power Apps' };
+        
         return React.createElement(
-            HelloWorld, props
+            PermitStatusDashboard, props
         );
     }
 
